@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "name": "Mobile Phone",
+      "price": "3000 kr",
+      "image": "https://placeimg.com/640/480/any?t=1580737163165"
+    },
+    {
+      "name": "Laptop",
+      "price": "5000 kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580761904653"
+    },
+    {
+      "name": "Tablet",
+      "price": "5000 kr",
+      "image": "https://placeimg.com/640/480/any?t=1580736835821"
+    },
+    {
+      "name": "Earphone",
+      "price": "500 kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580761797822"
+    },
+    {
+      "name": "Iphone",
+      "price": "12000kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580762010293"
+    },
+    {
+      "name": "AppleIpod",
+      "price": "2500 kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580762124988"
+    },
+    {
+      "name": "Kindle",
+      "price": "4000 kr ",
+      "image": "https://placeimg.com/640/480/tech?t=1580762163872"
+    },
+    {
+      "name": "USB",
+      "price": "200 kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580763698744"
+    }
+  ],
+  "shoppingcart": [
+    {
+      "name": "Earphone",
+      "price": "500 kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580761797822"
+    },
+    {
+      "name": "Mobile Phone",
+      "price": "3000 kr",
+      "image": "https://placeimg.com/640/480/any?t=1580737163165"
+    },
+    {
+      "name": "Laptop",
+      "price": "5000 kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580761904653"
+    }
+  ]
+}
