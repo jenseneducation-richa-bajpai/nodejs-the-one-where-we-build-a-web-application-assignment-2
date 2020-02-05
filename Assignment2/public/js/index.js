@@ -14,7 +14,24 @@ fetch(baseURL + "/product", { method: "GET" })
     displayProduct(data);
   });
 //};
-
+//check cart for product, then disable ADD button
+const checkCart = () => {
+  fetch(baseURL + "/getfromcart", { method: "GET" })
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      data.forEach(data => {
+        let productName = data.name;
+        let chkBtn = document.getElementById(productName);
+        console.log(chkBtn);
+        chkBtn.classList.remove("submitbutton");
+        chkBtn.classList.add("disable");
+        chkBtn.disabled = true;
+        chkBtn.innerHTML = "Product Already Added";
+      });
+    });
+};
 const displayProduct = products => {
   for (let i = 0; i < products.length; i++) {
     let productElem = document.createElement("p");
@@ -82,16 +99,12 @@ const displayProduct = products => {
         .then(data => {
           console.log(data);
           console.log(data.message);
-          document
-            .getElementById(`${products[i].name}`)
-            .classList.remove("submitbutton");
-          document
-            .getElementById(`${products[i].name}`)
-            .classList.add("disable");
-          document.getElementById(`${products[i].name}`).disabled = true;
-          document.getElementById(`${products[i].name}`).innerHTML =
-            "Product Already Added";
+          checkCart(data);
         });
     };
   }
 };
+window.addEventListener("load", () => {
+  console.log("Page is loaded!");
+  checkCart();
+});

@@ -43,6 +43,16 @@
   ],
   "shoppingcart": [
     {
+      "name": "Laptop",
+      "price": "5000 kr",
+      "image": "https://placeimg.com/640/480/tech?t=1580761904653"
+    },
+    {
+      "name": "Tablet",
+      "price": "5000 kr",
+      "image": "https://placeimg.com/640/480/any?t=1580736835821"
+    },
+    {
       "name": "Earphone",
       "price": "500 kr",
       "image": "https://placeimg.com/640/480/tech?t=1580761797822"
@@ -51,11 +61,6 @@
       "name": "Mobile Phone",
       "price": "3000 kr",
       "image": "https://placeimg.com/640/480/any?t=1580737163165"
-    },
-    {
-      "name": "Laptop",
-      "price": "5000 kr",
-      "image": "https://placeimg.com/640/480/tech?t=1580761904653"
     }
   ]
 }
